@@ -1,0 +1,146 @@
+
+.folder {
+    width: 570px;
+    height: 348px;
+    margin-top: 250px;
+}
+
+.fold {
+    position: relative;
+    top: -32px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+
+.fold:first-child {
+    background: transparent;
+}
+
+.fold__heading {
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    padding: 7px 10px 7px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.fold__heading h4 {
+	margin: 0;
+	font-weight: normal;
+}
+
+.active .fold__heading::before, .fold__heading::before {
+    content: "∨";
+    display: block;
+    position: absolute;
+    left: 6px;
+}
+
+.fold__heading::before {
+    content: "∧";
+}
+
+.fold__heading::after {
+    content: '\0020';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 13px 32px 32px 0;
+    border-color: transparent #ffffff transparent transparent;
+    position: absolute;
+    top: 5px;
+    right: -21px;
+    transform: rotate(-45deg);
+}
+
+.fold__heading, .fold__heading + .fold__content {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.fold__heading:hover, .fold__heading:hover + .fold__content {
+    border-top: 1px solid #ff9d8e;
+    border-left: 1px solid #ff9d8e;
+}
+
+.fold__heading:hover::after {
+    box-shadow: 1px 0 0 #ff9d8e;
+}
+
+.folder .fold__content {
+    display: none;
+    overflow: hidden;
+    background: #fff;
+    /* CSS animation */
+    /* transition: height .4s linear; */
+}
+
+.folder .fold__content p {
+    padding: 7px;
+    box-sizing: content-box;
+}
+
+/* CSS animation */
+.folder .active .fold__content {
+	display: block;
+    height: 100px;
+}
+
+.folder .inactive .fold__heading::before {
+    content: '';
+}
+.folder .inactive .fold__heading {
+    cursor: default;
+}
+
+
+.inactive .fold__heading:hover, .inactive .fold__heading:hover + .fold__content {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.inactive .fold__heading:hover::after {
+    box-shadow: 1px 0 0 #fff;
+}
+
+
+.slides {
+	background: #782356;
+}
+
+.slides_container {
+	width: 100px;
+	height: 100px;
+	position: relative;
+}
+
+.slide {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #782356;
+	display: none;
+}
+
+.Lorem_ipsum_dolor {
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: rgb(78, 88, 96);
+  line-height: 1.786;
+  text-align: left;
+   z-index: 161;
+}
+.expanded {
+  font-size: 10px;
+  font-family: "Raleway";
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+  line-height: 1.714;
+    z-index: 163;
+}
+

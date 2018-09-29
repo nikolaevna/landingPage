@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="269.939" height="269.96" viewBox="0 0 269.939 269.96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #e6e9ed;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Outline" class="cls-1" d="M735,1170.28H857L883,1197h122v242.97H735V1170.28Z" transform="translate(-735.031 -1170.38)"/>
+</svg>
